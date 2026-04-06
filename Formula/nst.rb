@@ -11,7 +11,7 @@ class Nst < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/alihamzaoriginal/namespace-terminator/releases/download/v1.0.0/nst_1.0.0_darwin_amd64.tar.gz"
-      sha256 "bd85dafbd95db5c80198fc67c46315912c0e02687b7fab135663fba778727672"
+      sha256 "7f0b97412f5ce5d696f53c8395f22514e88721e2eb0a16f0eb51d7d6ee2b09c5"
 
       define_method(:install) do
         bin.install "nst"
@@ -19,7 +19,7 @@ class Nst < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/alihamzaoriginal/namespace-terminator/releases/download/v1.0.0/nst_1.0.0_darwin_arm64.tar.gz"
-      sha256 "a2d1180bc9d7ffb644b1b9c4affee084b042272b8d91b0c210d434ab5294fbd5"
+      sha256 "a259f83ba549e0528987995a9ec576b89469c3d355e9e7112756a3ba6af42659"
 
       define_method(:install) do
         bin.install "nst"
@@ -30,14 +30,14 @@ class Nst < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/alihamzaoriginal/namespace-terminator/releases/download/v1.0.0/nst_1.0.0_linux_amd64.tar.gz"
-      sha256 "ed4e005b01e423a6f41f8b505207ea13ca884c481ac9a8d75e9482058d906212"
+      sha256 "a83f36b0ce339660356b92c02c75467539b09111f078ebe507291bd9f6e92b5f"
       define_method(:install) do
         bin.install "nst"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/alihamzaoriginal/namespace-terminator/releases/download/v1.0.0/nst_1.0.0_linux_arm64.tar.gz"
-      sha256 "416dc5693f8e4b96f750d17f6951b3582fb41fa93ffe09710c1f4daa603d95ae"
+      sha256 "98cdb686ac85ebd486e96bbf8f7dd402486cfecdf9b52542fcc9f37c01c8b7a9"
       define_method(:install) do
         bin.install "nst"
       end
